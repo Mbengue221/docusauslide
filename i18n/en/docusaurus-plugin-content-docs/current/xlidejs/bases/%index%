@@ -1,0 +1,30 @@
+---
+title: Intégrer xlidejs à son projet
+sidebar_label: "Installation : La suite-ico-fa-forward"
+sidebar_position: 2
+---
+
+import Link from '@docusaurus/Link';
+
+<section class="docsection">
+        <h2>
+            Le CSS
+        </h2>
+        <div class="wrap">
+            <h3>
+                Inclure le fichier css
+            </h3>
+            <p>
+                Une fois avoir <Link to="/docs/xlidejs/bases/">inclu</Link> le fichier xlidejs à votre code vous devez lier le fichier xlide.css au projet ainsi:
+                <div class='codebox'>
+                    <pre>
+                        <code class="language-html">
+    &lt;link rel="stylesheet" href="/assets/xlide.css"/>
+                        </code>
+                    </pre>
+                </div>
+            </p>
+        </div>
+    </section>
+Voilà, vous êtes dorénavant prêt à tous type de sites web avec de beaux sliders customlisables.
+Rendez vous au <Link to=''>niveau suivant</Link> pour votre premiere xlide.

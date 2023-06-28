@@ -1,11 +1,11 @@
 ---
-slug: أهلاً وسهلاً
-title: أهلاً وسهلاً
+slug: welcome
+title: Welcome
 authors:
   - slorber
   - yangshun
 tags:
-  - فايسبوك
+  - facebook
   - hello
   - docusaurus
 ---
