@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Documentation xlidejs": {
+    "message": "Documentation xlidejs",
+    "description": "The label for category Documentation xlidejs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.xlidejs - commencer": {
+    "message": "xlidejs - commencer",
+    "description": "The label for category xlidejs - commencer in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.xlidejs - les bases": {
+    "message": "xlidejs - les bases",
+    "description": "The label for category xlidejs - les bases in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Les options": {
+    "message": "Les options",
+    "description": "The label for category Les options in sidebar tutorialSidebar"
+  }
+}

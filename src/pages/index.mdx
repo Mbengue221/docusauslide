@@ -5,7 +5,7 @@ import {useEffect} from 'react'
 import Header from "./_head.mdx"
 import About from "./_about.mdx"
 export const SlideContainer = function (props){
-    const classString = `exemple ${props.class}`
+    const classString = <Translate>`exemple ${props.class}`</Translate>
     return  <section>
                 <h1>
                     {props.title}

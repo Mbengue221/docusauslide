@@ -1,0 +1,17 @@
+project_id: '598137'
+api_token: 819b36c4fa815846470e0941ca57ab0b8dc6789a0919e853a2d691b4e48d1d161cb639822df5c28a
+preserve_hierarchy: true
+languages_mapping: &languages_mapping
+files:
+  # JSON translation files
+  - source: /i18n/fr/**/*
+    translation: /i18n/%two_letters_code%/**/%original_file_name%
+  # Docs Markdown files
+  - source: /docs/**/*
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
+  # Blog Markdown files
+  - source: /blog/**/*
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-blog/**/%original_file_name%
+  # Pages Markdown files
+  - source: /src/pages/**/*
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-pages/**/%original_file_name%

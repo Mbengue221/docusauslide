@@ -35,6 +35,18 @@
     "message": "attention",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Retour au début de la page",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archive",
+    "description": "The page & hero description of the blog archive page"
+  },
   "theme.blog.paginator.navAriaLabel": {
     "message": "Pagination de la liste des articles du blog",
     "description": "The ARIA label for the blog pagination"
@@ -46,18 +58,6 @@
   "theme.blog.paginator.olderEntries": {
     "message": "Anciennes entrées",
     "description": "The label used to navigate to the older blog posts page (next page)"
-  },
-  "theme.blog.archive.title": {
-    "message": "Archive",
-    "description": "The page & hero title of the blog archive page"
-  },
-  "theme.blog.archive.description": {
-    "message": "Archive",
-    "description": "The page & hero description of the blog archive page"
-  },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Retour au début de la page",
-    "description": "The ARIA label for the back to top button"
   },
   "theme.blog.post.paginator.navAriaLabel": {
     "message": "Pagination des articles du blog",
@@ -83,14 +83,6 @@
     "message": "Voir tous les tags",
     "description": "The label of the link targeting the tag list page"
   },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Fil d'Ariane",
-    "description": "The ARIA label for the breadcrumbs"
-  },
-  "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} éléments",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
-  },
   "theme.colorToggle.ariaLabel": {
     "message": "Basculer entre le mode sombre et clair (actuellement {mode})",
     "description": "The ARIA label for the navbar color mode toggle"
@@ -102,6 +94,14 @@
   "theme.colorToggle.ariaLabel.mode.light": {
     "message": "mode clair",
     "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Fil d'Ariane",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} éléments",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
     "message": "Pages de documentation",
@@ -126,6 +126,10 @@
   "theme.docs.versionBadge.label": {
     "message": "Version: {versionLabel}"
   },
+  "theme.common.editThisPage": {
+    "message": "Éditer cette page",
+    "description": "The link label to edit the current page"
+  },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "Ceci est la documentation de la prochaine version {versionLabel} de {siteTitle}.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
@@ -141,10 +145,6 @@
   "theme.docs.versions.latestVersionLinkLabel": {
     "message": "dernière version",
     "description": "The label used for the latest version suggestion link label"
-  },
-  "theme.common.editThisPage": {
-    "message": "Éditer cette page",
-    "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
     "message": "Lien direct vers {heading}",
@@ -166,13 +166,13 @@
     "message": "Versions",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Fermer",
-    "description": "The ARIA label for close button of announcement bar"
-  },
   "theme.tags.tagsListLabel": {
     "message": "Tags :",
     "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Fermer",
+    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.sidebar.navAriaLabel": {
     "message": "Navigation article de blog récent",
@@ -210,10 +210,6 @@
     "message": "Sur cette page",
     "description": "The label used by the button on the collapsible TOC component"
   },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "Une minute de lecture|{readingTime} minutes de lecture",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
   "theme.blog.post.readMore": {
     "message": "Lire plus",
     "description": "The label used in blog post item excerpts to link to full blog posts"
@@ -222,13 +218,17 @@
     "message": "En savoir plus sur {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Une minute de lecture|{readingTime} minutes de lecture",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
   "theme.docs.breadcrumbs.home": {
     "message": "Page d'accueil",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Fermer la barre de navigation",
-    "description": "The ARIA label for close button of mobile sidebar"
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
     "message": "Réduire le menu latéral",
@@ -238,13 +238,13 @@
     "message": "Réduire le menu latéral",
     "description": "The title attribute for collapse button of doc sidebar"
   },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Fermer la barre de navigation",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
     "message": "← Retour au menu principal",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
-  },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
-    "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
     "message": "Ouvrir/fermer la barre de navigation",
