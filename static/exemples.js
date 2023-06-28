@@ -1,28 +1,28 @@
 
 function run (){
     const imgs = [
-        'slidepics/slide1.png',
-        'slidepics/slide2.png',
-        'slidepics/slide3.png',
-        'slidepics/slide4.png',
-        'slidepics/slide5.png',
-        'slidepics/slide6.png',
-        'slidepics/slide7.png'
+        '/docusauslide/slidepics/slide1.png',
+        '/docusauslide/slidepics/slide2.png',
+        '/docusauslide/slidepics/slide3.png',
+        '/docusauslide/slidepics/slide4.png',
+        '/docusauslide/slidepics/slide5.png',
+        '/docusauslide/slidepics/slide6.png',
+        '/docusauslide/slidepics/slide7.png'
     ]
     const images = [
-        'slidepics/slide1.avif',
-        'slidepics/slide2.avif',
-        'slidepics/slide3.avif',
-        'slidepics/slide4.avif',
-        'slidepics/slide5.avif'
+        '/docusauslide/slidepics/slide1.avif',
+        '/docusauslide/slidepics/slide2.avif',
+        '/docusauslide/slidepics/slide3.avif',
+        '/docusauslide/slidepics/slide4.avif',
+        '/docusauslide/slidepics/slide5.avif'
     ]
     const pics = [
-        'slidepics/slide3.avif',
-        'slidepics/slide4.avif',
-        'slidepics/slide5.avif',
-        'slidepics/slide6.avif',
-        'slidepics/slide7.avif',
-        'slidepics/slide8.avif'
+        '/docusauslide/slidepics/slide3.avif',
+        '/docusauslide/slidepics/slide4.avif',
+        '/docusauslide/slidepics/slide5.avif',
+        '/docusauslide/slidepics/slide6.avif',
+        '/docusauslide/slidepics/slide7.avif',
+        '/docusauslide/slidepics/slide8.avif'
     ]
 
     if((typeof document) != (typeof undefined)){
