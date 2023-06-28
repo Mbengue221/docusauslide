@@ -7,7 +7,7 @@ import Header from "./_head.mdx"
 import About from "./_about.mdx"
 
 export const SlideContainer = function (props){
-    const classString = <Translate>`exemple ${props.class}`</Translate>
+    const classString = `exemple ${props.class}`
     return  <section>
                 <h1>
                     {props.title}
@@ -22,24 +22,35 @@ export const ListeExemples = function (){
     useEffect(()=>{
         run()
     })
+    const exemples = [
+        [
+            <translate>'fleches'</translate>,<translate>'exemple5'</translate>
+        ]
+        ,[
+            <translate>'autoplay'</translate>,<translate>'exemple6'</translate>
+        ],[
+            <translate>'un slide simple'</translate>,<translate>'exemple1'</translate>
+        ],[
+            <translate>'deroulement vertical'</translate>,<translate>'exemple2'</translate>
+        ],[
+            <translate>'avec apercus'</translate>,<translate>'exemple3'</translate>
+        ],[
+            <translate>'sens-inverse'</translate>,<translate>'exemple4'</translate>
+        ],[
+            <translate>'fleches et apercus'</translate>,<translate>'exemple7'</translate>
+        ],[
+            <translate>'multiple'</translate>,<translate>'exemple8'</translate>
+        ]
+    ]
     return <section className='liste_exemples'>
+        
+        {exemples.map(
+            exemple=>{
+                return <SlideContainer title={exemple[0]} class={exemple[1]}></SlideContainer>
+            }
+        )}
     
-        <SlideContainer title='fleches' class='exemple5'></SlideContainer>
      
-        <SlideContainer title='autoplay' class='exemple6'></SlideContainer>
-     
-        <SlideContainer title='un slide simple' class='exemple1'></SlideContainer>
-     
-        <SlideContainer title='deroulement vertical' class='exemple2'></SlideContainer>
-     
-        <SlideContainer title='avec apercus' class='exemple3'></SlideContainer>
-     
-        <SlideContainer title='sens-inverse' class='exemple4'></SlideContainer>
-     
-        <SlideContainer title='fleches et apercus' class='exemple7'></SlideContainer>
-     
-        <SlideContainer title='multiple' class='exemple8'></SlideContainer>
-    
     </section>
 }
 
