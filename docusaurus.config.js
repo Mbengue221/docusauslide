@@ -164,6 +164,7 @@ const config = {
       algolia:{
         apiKey:"661638666fa8d46fd3a17b39dd1618a3",
         appId:"29AP32OC5X",
+        contextualSearch: true,
         indexName:"my_first_index"
       },
     })
