@@ -1,0 +1,42 @@
+{
+  "link.title.xlidejs": {
+    "message": "xlidejs",
+    "description": "The title of the footer links column with title=xlidejs in the footer"
+  },
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Plus": {
+    "message": "Plus",
+    "description": "The title of the footer links column with title=Plus in the footer"
+  },
+  "link.item.label.Accueil": {
+    "message": "Accueil",
+    "description": "The label of footer link with label=Accueil linking to /"
+  },
+  "link.item.label.Documentation": {
+    "message": "Documentation",
+    "description": "The label of footer link with label=Documentation linking to /docs/xlidejs"
+  },
+  "link.item.label.Bien commencer": {
+    "message": "Bien commencer",
+    "description": "The label of footer link with label=Bien commencer linking to /docs/category/xlidejs---commencer"
+  },
+  "link.item.label.Les bases": {
+    "message": "Les bases",
+    "description": "The label of footer link with label=Les bases linking to /docs/category/xlidejs---les-bases"
+  },
+  "link.item.label.Les options": {
+    "message": "Les options",
+    "description": "The label of footer link with label=Les options linking to /docs/category/les-options"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/dev0ps221/xlidejs"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 xlidejs, Inc. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

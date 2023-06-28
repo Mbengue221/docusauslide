@@ -1,0 +1,20 @@
+---
+title: Introduction
+description: Introduction a xlidejs
+sidebar_label: Introduction-ico-fa-gear
+sidebar_position: 1
+---
+import commencer from "./commencement" 
+import {useEffect} from 'react' 
+export default function (){
+    useEffect(
+        ()=>{
+            commencer()
+        }
+    )
+    return <section> 
+            <div className="slideintro" style={{height:"50vh"}}></div>
+            <link rel='stylesheet' href="/xlide.css"/> 
+        </section>
+    
+}
