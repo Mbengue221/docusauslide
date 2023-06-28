@@ -2,11 +2,11 @@
 export default function(){
     const introslide = xlide('.slideintro')
     .addImage(
-        '/slidepics/slide1.png'
+        '/docusauslide/slidepics/slide1.png'
     ).addImage(
-        '/slidepics/slide2.png'
+        '/docusauslide/slidepics/slide2.png'
     ).addImage(
-        '/slidepics/slide3.png'
+        '/docusauslide/slidepics/slide3.png'
     ).addOption(
         'autoplay'
     ).addOption(
