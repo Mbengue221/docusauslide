@@ -35,17 +35,17 @@ const config = {
 
   stylesheets:[
     {
-      href:"/font-awesome.all.min.css"
+      href:"/docusauslide/font-awesome.all.min.css"
     },
     {
-      href:"/xlide.css"
+      href:"/docusauslide/xlide.css"
     }
   ],
 
   scripts:[
-    {src:"/xlide.js"}
-    ,{src:"/process_menu_links.js"}
-    ,{src:"/exemples.js"}
+    {src:"/docusauslide/xlide.js"}
+    ,{src:"/docusauslide/process_menu_links.js"}
+    ,{src:"/docusauslide/exemples.js"}
   ],
 
   presets: [
