@@ -1,0 +1,28 @@
+---
+title: Documentation xlidejs
+---
+import {useEffect} from "react"
+export function SlideIntro(){
+    useEffect(()=>{const introslide = xlide('.slideintro')
+    .addImage(
+        '/slidepics/slide1.png'
+    ).addImage(
+        '/slidepics/slide2.png'
+    ).addImage(
+        '/slidepics/slide3.png'
+    ).addOption(
+        'autoplay'
+    ).addOption(
+        'interval',5
+    ).addOption(
+        'vertical'
+    ).addOption(
+        'previews'
+    )})
+    return <div className="slideintro" style={{height:"50vh"}}></div>
+}
+
+xlidejs est un slider/carrousel léger, flexible, accessible et parfait pour n'importe quel site Web. Il est facile à utiliser et à configurer, et il a fière allure sur n'importe quel appareil.
+
+
+<SlideIntro></SlideIntro>
