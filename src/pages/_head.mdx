@@ -9,10 +9,10 @@ export default function (){
                 Ce slider/carrousel léger, flexible et accessible est parfait pour n'importe quel site Web. Il est facile à utiliser et à configurer, et il a fière allure sur n'importe quel appareil.
             </h2>
             <div class="actions">
-                <button onClick={function(){window.open('https://cdn.jsdelivr.net/gh/dev0ps221/xlidejs/dist/xlidejs.zip','_blank')}}>
+                <button onClick={function(){ if((typeof window) !== (typeof undefined)) { window.open('https://cdn.jsdelivr.net/gh/dev0ps221/xlidejs/dist/xlidejs.zip','_blank') }}}>
                     telecharger
                 </button>
-                <button onClick={function(){document.location.href="/docs/category/xlidejs---commencer"}}>
+                <button onClick={function(){ if((typeof document) !== (typeof undefined)) { document.location.href="/docs/category/xlidejs---commencer" }}}>
                     commencer
                 </button>
             </div>

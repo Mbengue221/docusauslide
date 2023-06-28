@@ -45,6 +45,7 @@ const config = {
   scripts:[
     {src:"/xlide.js"}
     ,{src:"/process_menu_links.js"}
+    ,{src:"/exemples.js"}
   ],
 
   presets: [

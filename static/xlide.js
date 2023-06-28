@@ -12,104 +12,109 @@ var xLide = class xLide{
         return elem instanceof HTMLElement
     }
     processItems(){
+        if((typeof document) !== (typeof undefined)){
 
-        this.items = this.slider.querySelectorAll('.xlide-item')
-        this.items = []
-        if(this.checkOptionsList('images')){
-            this.options['images'].forEach(
-                img=>{
-                    const item = document.createElement('div')
-                    item.classList.add('xlide-item')
-                    if((typeof img) === 'string'){
-                        const slideimg = document.createElement('img')
-                        slideimg.src = img+"?t="+new Date().getTime()
-                        item.appendChild(slideimg)
-                    }
-                    if((typeof img) === 'object'){
-                        if(this.matchHtmlElem(img)){
-                            item.appendChild(img)
-                        }else{
-                            if(img.hasOwnProperty('img')){
-                                const slideimg = document.createElement('img')
-                                slideimg.src = img['img']+"?t="+new Date().getTime()
-                                item.appendChild(slideimg)
-                            }
-                            if(img.hasOwnProperty('data')){
-                                const data = img['data']
-                                if((this.matchHtmlElem(data))){
-                                    data.classList.add('data')
-                                    item.appendChild(data)
-                                }else{
-                                    const dataelem = document.createElement('div')
-                                    dataelem.classList.add('data')
-                                    if((typeof data === 'string')){
-                                        dataelem.innerHTML=data
-                                        item.appendChild(dataelem)
-                                    }
-                                    if((typeof data) === 'object'){
-                                        if(data.hasOwnProperty('title')){
-                                            
+            this.items = this.slider.querySelectorAll('.xlide-item')
+            this.items = []
+            if(this.checkOptionsList('images')){
+                this.options['images'].forEach(
+                    img=>{
+                        const item = document.createElement('div')
+                        item.classList.add('xlide-item')
+                        if((typeof img) === 'string'){
+                            const slideimg = document.createElement('img')
+                            slideimg.src = img+"?t="+new Date().getTime()
+                            item.appendChild(slideimg)
+                        }
+                        if((typeof img) === 'object'){
+                            if(this.matchHtmlElem(img)){
+                                item.appendChild(img)
+                            }else{
+                                if(img.hasOwnProperty('img')){
+                                    const slideimg = document.createElement('img')
+                                    slideimg.src = img['img']+"?t="+new Date().getTime()
+                                    item.appendChild(slideimg)
+                                }
+                                if(img.hasOwnProperty('data')){
+                                    const data = img['data']
+                                    if((this.matchHtmlElem(data))){
+                                        data.classList.add('data')
+                                        item.appendChild(data)
+                                    }else{
+                                        const dataelem = document.createElement('div')
+                                        dataelem.classList.add('data')
+                                        if((typeof data === 'string')){
+                                            dataelem.innerHTML=data
+                                            item.appendChild(dataelem)
+                                        }
+                                        if((typeof data) === 'object'){
+                                            if(data.hasOwnProperty('title')){
+                                                
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
+                        this.items.push(item)
                     }
-                    this.items.push(item)
-                }
-            )
+                )
+            }
+            this.setSlideVar('--slidesPerView', this.checkOption('slidesPerView')?this.options['slidesPerView']:1)
         }
-        this.setSlideVar('--slidesPerView', this.checkOption('slidesPerView')?this.options['slidesPerView']:1)
         return this
     }
     hasCtrlBar(){
         return this.checkOption('controls') || this.checkOption('previews')
     }
     processCtrlBar(){
-        //check if a controlbar is needed and build it if necessary
-        if(this.hasCtrlBar()){
-            let previews = null,
-                leftCtrl = null,
-                rightCtrl = null
-            const controls = document.createElement('div')
-            controls.classList.add('controlbar')
-            if(this.checkOption('previews') && this.options['previews']){
-                previews = document.createElement('div')
-                previews.classList.add('previews')
-                this.items.forEach(
-                    (item,idx)=>{
-                        const img = item.querySelector('img')
-                        const preview = document.createElement('div')
-                        preview.classList.add('preview')
-                        if(img){
-                            preview.appendChild(img.cloneNode())
-                        }else{
-                            const label = document.createElement('h4')
-                            label.innerHTML = "slide "+(idx+1)
-                            preview.appendChild(label)
+
+        if((typeof document) !== (typeof undefined)){
+            //check if a controlbar is needed and build it if necessary
+            if(this.hasCtrlBar()){
+                let previews = null,
+                    leftCtrl = null,
+                    rightCtrl = null
+                const controls = document.createElement('div')
+                controls.classList.add('controlbar')
+                if(this.checkOption('previews') && this.options['previews']){
+                    previews = document.createElement('div')
+                    previews.classList.add('previews')
+                    this.items.forEach(
+                        (item,idx)=>{
+                            const img = item.querySelector('img')
+                            const preview = document.createElement('div')
+                            preview.classList.add('preview')
+                            if(img){
+                                preview.appendChild(img.cloneNode())
+                            }else{
+                                const label = document.createElement('h4')
+                                label.innerHTML = "slide "+(idx+1)
+                                preview.appendChild(label)
+                            }
+                            previews.appendChild(preview)
                         }
-                        previews.appendChild(preview)
+                    )
+                }
+                if(this.checkOption('controls') && this.options['controls']){
+                    leftCtrl = document.createElement('div')
+                    leftCtrl.classList.add('before')
+                    leftCtrl.innerHTML = "<"
+                    controls.appendChild(leftCtrl)
+                    if(previews){
+                        controls.appendChild(previews)
                     }
-                )
-            }
-            if(this.checkOption('controls') && this.options['controls']){
-                leftCtrl = document.createElement('div')
-                leftCtrl.classList.add('before')
-                leftCtrl.innerHTML = "<"
-                controls.appendChild(leftCtrl)
-                if(previews){
-                    controls.appendChild(previews)
+                    rightCtrl = document.createElement('div')
+                    rightCtrl.classList.add('after')
+                    rightCtrl.innerHTML = ">"
+                    controls.appendChild(rightCtrl)
+                }else{
+                    if(previews){
+                        controls.appendChild(previews)
+                    }
                 }
-                rightCtrl = document.createElement('div')
-                rightCtrl.classList.add('after')
-                rightCtrl.innerHTML = ">"
-                controls.appendChild(rightCtrl)
-            }else{
-                if(previews){
-                    controls.appendChild(previews)
-                }
+                return controls
             }
-            return controls
         }
     }
     delImage(image,refresh=1){
