@@ -39,6 +39,6 @@ jobs:
           path: build
       - name: Deploy to GitHub Pages
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
         id: deployment
         uses: actions/deploy-pages@v1
