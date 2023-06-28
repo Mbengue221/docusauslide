@@ -162,7 +162,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       algolia:{
-        apiKey:"f697e995f1bdd733465085db035296a1",
+        apiKey:"661638666fa8d46fd3a17b39dd1618a3",
         appId:"29AP32OC5X",
         indexName:"my_first_index"
       },
