@@ -49,6 +49,7 @@ const config = {
     {src:"/docusauslide/xlide.js"}
     ,{src:"/docusauslide/process_menu_links.js"}
     ,{src:"/docusauslide/exemples.js"}
+    ,{src:"https://polyfill.io/v3/polyfill.min.js?features=Promise%2CObject.entries%2CObject.assign"}
   ],
 
   presets: [
@@ -159,6 +160,11 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      algolia:{
+        apiKey:"c762d35f6a98668bf8c505c9c30bc9c0",
+        appId:"29AP32OC5X",
+        indexName:"my_first_index"
       },
     })
 };
